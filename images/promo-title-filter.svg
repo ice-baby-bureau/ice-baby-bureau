@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<filter id="promo__title-glow">
+		<feGaussianBlur stdDeviation="4" result="Glow" />
+		<feMerge>
+			<feMergeNode in="Glow" />
+			<feMergeNode in="SourceGraphic" />
+		</feMerge>
+	</filter>
+</svg>
