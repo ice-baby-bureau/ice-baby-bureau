@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+	<style>
+		.logo-path{fill:#000}
+		@media (prefers-color-scheme:dark){.logo-path{fill:#fff}}
+	</style>
+	<path class="logo-path" d="M64 0c17.673 0 32 14.327 32 32 0 17.668-14.318 31.992-31.984 32H128c0 17.673-14.327 32-32 32-17.673 0-32-14.327-32-32v64c-17.673 0-32-14.327-32-32 0-17.673 14.327-32 32-32H0c0-17.673 14.327-32 32-32 17.673 0 32 14.327 32 32V0Z" />
+</svg>
