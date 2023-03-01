@@ -341,6 +341,7 @@ button {
   height: 2000px;
   top: calc(50% - 1000px);
   left: calc(45% - 1000px);
+  filter: blur(24px);
   z-index: -1;
 }
 .feature {
