@@ -269,6 +269,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: var(--accent-secondary);
   -webkit-mask: url('../images/promo-title.svg') 0 0/100% 100% no-repeat;
   mask: url('../images/promo-title.svg') 0 0/100% 100% no-repeat;
 }
