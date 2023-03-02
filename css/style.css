@@ -97,7 +97,8 @@ button {
   padding: var(--page-padding);
   margin: auto;
 }
-.grid {
+section,
+footer .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0 var(--grid-gap);
