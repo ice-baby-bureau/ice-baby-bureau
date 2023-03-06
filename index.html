@@ -9,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=1000, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="color-scheme" content="dark" />
     <meta
@@ -53,8 +53,12 @@
             <a class="link--underlined link--with-chevron" href="#"><span>Мобильные кондиционеры</span></a>
           </nav>
           <div class="main-header__actions row">
-            <a class="main-header__action" href="#"><img src="images/ui-icon-search.svg" alt="Поиск" /></a>
-            <a class="main-header__action" href="#"><img src="images/ui-icon-cart.svg" alt="Корзина" /></a>
+            <a class="main-header__action" href="#" aria-label="Найти технику"
+              ><img src="images/ui-icon-search.svg" alt="Поиск" aria-hidden="true"
+            /></a>
+            <a class="main-header__action" href="#" aria-label="Найти в корзину"
+              ><img src="images/ui-icon-cart.svg" alt="Корзина" aria-hidden="true"
+            /></a>
           </div>
         </header>
 
@@ -71,8 +75,8 @@
             <div class="promo__description">
               Мобильный инверторный кондиционер нового поколения с режимом охлаждения, вентиляции и осушения воздуха.
             </div>
-            <div class="promo__price">32 000 ₽</div>
-            <button class="button">В корзину</button>
+            <div class="promo__price" aria-label="Стоимость — тридцать две тысячи рублей">32 000 ₽</div>
+            <button class="button" aria-label="Добавить в корзину за тридцать две тысячи рублей">В корзину</button>
           </div>
           <picture>
             <source srcset="images/promo-hero-image.webp 1x, images/promo-hero-image@2x.webp 2x" type="image/webp" />
@@ -90,7 +94,7 @@
                 самостоятельно за 15 минут.
               </p>
             </div>
-            <a class="link--with-arrow lead__link" href="#"
+            <a class="link--with-arrow lead__link" href="#" aria-label="Скачать техническую документацию в PDF"
               >Техническая документация <span class="text-caps">(PDF)</span></a
             >
           </div>
@@ -136,7 +140,7 @@
             <picture>
               <source srcset="images/main-features-mango-glow.webp" type="image/webp" />
               <source srcset="images/main-features-mango-glow.jpg" />
-              <img class="two-columns__main-glow" src="images/main-features-mango-glow.jpg" alt="" />
+              <img class="two-columns__main-glow" src="images/main-features-mango-glow.jpg" alt="" aria-hidden="true" />
             </picture>
           </div>
         </section>
@@ -149,7 +153,13 @@
                 Запатентованный компрессор «Электролюкс Лайт Висбю» охладит комнату на 30 м² всего за двадцать минут.
               </p>
               <div class="card__link-wrapper">
-                <a class="link--with-arrow card__link" href="#">Узнать больше</a>
+                <a
+                  class="link--with-arrow card__link"
+                  href="#"
+                  aria-label="Узнать больше о компрессоре"
+                  aria-haspopup="true"
+                  >Узнать больше</a
+                >
               </div>
             </div>
             <picture>
@@ -166,7 +176,7 @@
               <h3 class="card__title">Тихий</h3>
               <p class="card__description">30 децибел на высокой мощности</p>
             </div>
-            <img class="card__additional-graphic" src="images/features-grid-silence.svg" />
+            <img class="card__additional-graphic" src="images/features-grid-silence.svg" alt="" aria-hidden="true" />
             <picture>
               <source
                 srcset="images/features-grid-baby.webp 1x, images/features-grid-baby@2x.webp 2x"
@@ -185,14 +195,18 @@
               <h3 class="card__title">Гипоаллергенный</h3>
               <p class="card__description">Инновационный фильтр «Эйр флауэр» очищает воздух от уличной пыли.</p>
             </div>
-            <img class="card__image" src="images/features-grid-filter.svg" />
+            <img class="card__image" src="images/features-grid-filter.svg" alt="Схема работы фильтра «эйр-флауэр»" />
           </div>
           <div class="grid__item grid__item--4 card card--small">
             <div class="column card__text">
               <h3 class="card__title">Удобный</h3>
               <p class="card__description">Современное управление и тонкая настройка через приложение на телефоне.</p>
             </div>
-            <img class="card__image" src="images/features-grid-app.svg" />
+            <img
+              class="card__image"
+              src="images/features-grid-app.svg"
+              alt="Основной экран приложения, стилизованный для сайта"
+            />
           </div>
           <div class="grid__item grid__item--4 card card--small">
             <div class="column card__text">
@@ -201,7 +215,11 @@
                 Не нужно сверлить стены и вешать наружный блок — можно ставить в любое место.
               </p>
             </div>
-            <img class="card__image" src="images/features-grid-outer-block.svg" />
+            <img
+              class="card__image"
+              src="images/features-grid-outer-block.svg"
+              alt="Перечеркнутая накрест иконка внешнего блока сплит-системы"
+            />
           </div>
         </section>
 
@@ -225,9 +243,10 @@
                   autocomplete="email"
                   placeholder="Электропочта"
                   class="textfield main-footer__form-textfield"
+                  aria-label="Введите электропочту, чтобы подписаться на рассылку об акциях и новинках"
                 />
                 <button class="main-footer__form-button">
-                  <img src="images/ui-icon-submit.svg" alt="→" />
+                  <img src="images/ui-icon-submit.svg" alt="Подписаться" />
                 </button>
               </div>
               <div class="main-footer__form-label">Рассылка об акциях и новинках. Раз в неделю, без спама.</div>
