@@ -48,9 +48,16 @@
       <main class="main-wrapper">
         <header class="main-header row">
           <nav class="main-header__nav row">
-            <a class="link--underlined" href="#">Айс бейби</a>
-            <a class="link--underlined link--with-chevron" href="#"><span>Климатическая техника</span></a>
-            <a class="link--underlined link--with-chevron" href="#"><span>Мобильные кондиционеры</span></a>
+            <button class="main-header__drawer">
+              <img src="images/ui-icon-menu.svg" alt="Меню" aria-hidden="true" />
+            </button>
+            <a class="link--underlined link--home" href="#">Айс бейби</a>
+            <a class="link--underlined link--with-chevron link--category" href="#"
+              ><span>Климатическая техника</span></a
+            >
+            <a class="link--underlined link--with-chevron link--category" href="#"
+              ><span>Мобильные кондиционеры</span></a
+            >
           </nav>
           <div class="main-header__actions row">
             <a class="main-header__action" href="#" aria-label="Найти технику"
@@ -65,33 +72,56 @@
         <section class="promo">
           <div class="grid__item--12 promo__title">
             <h1 class="promo__title-text">Манго</h1>
-            <video class="promo__title-video" poster="video/video-gradient-thumb.jpg" autoplay loop muted>
+            <video
+              class="promo__title-video"
+              poster="video/video-gradient-thumb.jpg"
+              autoplay
+              loop
+              muted
+              aria-hidden="true"
+            >
               <source src="video/video-gradient.webm" type="video/webm" />
               <source src="video/video-gradient.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="grid__item grid__item--4">
+          <div class="grid__item promo__column">
             <img class="promo__brand" src="images/promo-brand-electrolux.svg" alt="Логотип Электролюкса"" />
             <div class="promo__description">
-              Мобильный инверторный кондиционер нового поколения с режимом охлаждения, вентиляции и осушения воздуха.
+              Мобильный инверторный кондиционер нового поколения с режимом охлаждения, вентиляции и осушения воздуха.
             </div>
-            <div class="promo__price" aria-label="Стоимость — тридцать две тысячи рублей">32 000 ₽</div>
-            <button class="button" aria-label="Добавить в корзину за тридцать две тысячи рублей">В корзину</button>
+            <div class="promo__call-to-action">
+              <div class="promo__price">32 000 ₽</div>
+              <button class="button promo__button" aria-label="Добавить в корзину за тридцать две тысячи рублей">
+                В корзину
+              </button>
+            </div>
           </div>
-          <picture>
-            <source srcset="images/promo-hero-image.webp 1x, images/promo-hero-image@2x.webp 2x" type="image/webp" />
-            <source srcset="images/promo-hero-image.png 1x, images/promo-hero-image@2x.png 2x" />
-            <img class="promo__hero-image" src="images/promo-hero-image.png" alt="Фотография кондиционера Манго" />
+          <picture class="promo__hero-image">
+            <source
+              srcset="images/promo-hero-image.webp 1x, images/promo-hero-image@2x.webp 2x"
+              type="image/webp"
+              media="(min-width: 568px)"
+            />
+            <source
+              srcset="images/promo-hero-image.png 1x, images/promo-hero-image@2x.png 2x"
+              media="(min-width: 568px)"
+            />
+            <source
+              srcset="images/promo-hero-image-small.webp 1x, images/promo-hero-image-small@2x.webp 2x"
+              type="image/webp"
+            />
+            <source srcset="images/promo-hero-image-small.png 1x, images/promo-hero-image-small@2x.png 2x" />
+            <img src="images/promo-hero-image.png" alt="Фотография кондиционера Манго" />
           </picture>
         </section>
 
         <section class="lead">
-          <div class="grid__item grid__item--9">
+          <div class="grid__item lead__wrapper">
             <div class="lead__text">
               <h2 class="lead__title">Встречайте Манго.</h2>
               <p class="lead__description">
-                Мобильный кондиционер с удивительным дизайном. Быстро охладит любую комнату в квартире. Устанавливается
-                самостоятельно за 15 минут.
+                Мобильный кондиционер с удивительным дизайном. Быстро охладит любую комнату в квартире. Устанавливается
+                самостоятельно за 15 минут.
               </p>
             </div>
             <a class="link--with-arrow lead__link" href="#" aria-label="Скачать техническую документацию в PDF"
@@ -104,7 +134,7 @@
           <div class="grid__item grid__item--5 column two-columns__aside">
             <div class="feature">
               <h3 class="feature__title">Охлаждение.</h3>
-              <p class="feature__description">Поддерживает температуру от 15 до 25 градусов.</p>
+              <p class="feature__description">Поддерживает температуру от 15 до 25 градусов.</p>
             </div>
             <div class="feature">
               <h3 class="feature__title">Осушение.</h3>
@@ -117,11 +147,11 @@
             <div class="feature feature--epilogue">
               <div class="feature__icon-wrapper feature__icon--shock">
                 <div class="feature__icon">
-                  <img src="images/factoid-icon-shock.svg" alt="Иконка молнии" />
+                  <img src="images/factoid-icon-shock.svg" alt="Иконка молнии" aria-hidden="true" />
                 </div>
               </div>
               <h3 class="feature__title">Экономия электричества.</h3>
-              <p class="feature__description">Класс энергоэффективности «А», тратит на 45 % меньше энергии.</p>
+              <p class="feature__description">Класс энергоэффективности «А», тратит на 45 % меньше энергии.</p>
             </div>
           </div>
           <div class="grid__item grid__item--7 two-columns__main">
@@ -146,11 +176,11 @@
         </section>
 
         <section class="cards-grid">
-          <div class="grid__item grid__item--8 card card--medium">
+          <div class="grid__item card card--medium">
             <div class="column card__text">
               <h3 class="card__title">Мощный</h3>
               <p class="card__description">
-                Запатентованный компрессор «Электролюкс Лайт Висбю» охладит комнату на 30 м² всего за двадцать минут.
+                Запатентованный компрессор «Электролюкс Лайт Висбю» охладит комнату на 30 м² всего за двадцать минут.
               </p>
               <div class="card__link-wrapper">
                 <a
@@ -166,12 +196,19 @@
               <source
                 srcset="images/features-grid-compressor.webp 1x, images/features-grid-compressor@2x.webp 2x"
                 type="image/webp"
+                media="(min-width: 451px)"
               />
-              <source srcset="images/features-grid-compressor.png 1x, images/features-grid-compressor.@2x.png 2x" />
+              <source
+                srcset="images/features-grid-compressor.png 1x, images/features-grid-compressor.@2x.png 2x"
+                media="(min-width: 451px)"
+              />
+              <source srcset="images/features-grid-compressor-full.webp" type="image/webp" />
+              <source srcset="images/features-grid-compressor-full.png" />
+
               <img class="card__image" src="images/features-grid-compressor.png" alt="Фотография компрессора" />
             </picture>
           </div>
-          <div class="grid__item grid__item--4 card card--small card--centerized card--silence">
+          <div class="grid__item card card--small card--centerized card--silence">
             <div class="column card__text">
               <h3 class="card__title">Тихий</h3>
               <p class="card__description">30 децибел на высокой мощности</p>
@@ -190,14 +227,14 @@
               />
             </picture>
           </div>
-          <div class="grid__item grid__item--4 card card--small">
+          <div class="grid__item card card--small">
             <div class="column card__text">
               <h3 class="card__title">Гипоаллергенный</h3>
               <p class="card__description">Инновационный фильтр «Эйр флауэр» очищает воздух от уличной пыли.</p>
             </div>
             <img class="card__image" src="images/features-grid-filter.svg" alt="Схема работы фильтра «эйр-флауэр»" />
           </div>
-          <div class="grid__item grid__item--4 card card--small">
+          <div class="grid__item card card--small">
             <div class="column card__text">
               <h3 class="card__title">Удобный</h3>
               <p class="card__description">Современное управление и тонкая настройка через приложение на телефоне.</p>
@@ -208,7 +245,7 @@
               alt="Основной экран приложения, стилизованный для сайта"
             />
           </div>
-          <div class="grid__item grid__item--4 card card--small">
+          <div class="grid__item card card--small">
             <div class="column card__text">
               <h3 class="card__title">Автономный</h3>
               <p class="card__description">
@@ -235,15 +272,15 @@
               <a class="link--underlined" href="#">Оплата и доставка</a>
               <a class="link--underlined" href="#">Обмен и возврат</a>
             </div>
-            <div class="grid__item grid__item--2"></div>
-            <form class="grid__item grid__item--4 column main-footer__form">
+            <div class="main-footer__spring"></div>
+            <form class="grid__item column main-footer__form">
               <div class="row">
                 <input
                   type="email"
                   autocomplete="email"
                   placeholder="Электропочта"
                   class="textfield main-footer__form-textfield"
-                  aria-label="Введите электропочту, чтобы подписаться на рассылку об акциях и новинках"
+                  aria-label="Введите электронную почту, чтобы подписаться на рассылку об акциях и новинках"
                 />
                 <button class="main-footer__form-button">
                   <img src="images/ui-icon-submit.svg" alt="Подписаться" />
@@ -253,8 +290,9 @@
             </form>
           </div>
           <div class="grid__item--12 main-footer__legal grid">
-            <div class="grid__item grid__item--8">© Айс бейби, 2023</div>
-            <div class="grid__item grid__item--4 row main-footer__legal-links">
+            <div class="grid__item grid__item--6 main-footer__copyright">© Айс бейби, 2023</div>
+            <div class="main-footer__spring"></div>
+            <div class="grid__item row main-footer__legal-links">
               <a class="main-footer__legal-link" href="#">Оферта</a>
               <a class="main-footer__legal-link" href="#">Правила</a>
               <a class="main-footer__legal-link" href="#">Контакты</a>
