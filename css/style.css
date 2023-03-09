@@ -169,7 +169,7 @@ footer .grid {
 .button {
   padding: 14px 32px 11px;
   font-size: var(--size-caption);
-  line-height: 1.5rem;
+  line-height: 24px;
   letter-spacing: 0.01em;
   background-color: var(--foreground-lead);
   color: var(--foreground-inverted);
